@@ -4,7 +4,6 @@ const entityStorage = require('../storage/entity-storage');
 //cлушаем приходящие сущности
 router.post('/entity', (req, res) => {
   entityStorage.setEntity(req.body);
-  console.log(req.body)
   res.sendStatus(200);
 });
 
